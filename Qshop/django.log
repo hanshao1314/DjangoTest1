@@ -2159,3 +2159,863 @@ Not Found: /favicon.ico
 "GET /static/seller/js/sb-admin-2.min.js HTTP/1.1" 200 1106
 "GET /static/seller/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 78635
 "GET /static/seller/vendor/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 74348
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "Seller_goodstype"."id", "Seller_goodstype"."type_label", "Seller_goodstype"."type_description", "Seller_goodstype"."picture" FROM "Seller_goodstype"; args=()
+(0.001) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE "Seller_goods"."goods_type_id" = 1 ORDER BY "Seller_goods"."goods_pro_time" DESC; args=(1,)
+(0.000) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE "Seller_goods"."goods_type_id" = 2 ORDER BY "Seller_goods"."goods_pro_time" DESC; args=(2,)
+(0.000) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE "Seller_goods"."goods_type_id" = 3 ORDER BY "Seller_goods"."goods_pro_time" DESC; args=(3,)
+(0.001) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE "Seller_goods"."goods_type_id" = 4 ORDER BY "Seller_goods"."goods_pro_time" DESC; args=(4,)
+(0.001) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE "Seller_goods"."goods_type_id" = 5 ORDER BY "Seller_goods"."goods_pro_time" DESC; args=(5,)
+(0.000) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE "Seller_goods"."goods_type_id" = 6 ORDER BY "Seller_goods"."goods_pro_time" DESC; args=(6,)
+Exception while resolving variable 'username' in template 'buyer/index.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in {'monitor_count': '25', 'csrftoken': '2ws9TQ34QSU72rJDfVVtwBcIQ4rtjqeIuD6qCKBff1QeHmadHysvD7AuQPKX2ckh', '__guid': '96992031.371719847961085300.1568620609643.3909'}
+"GET / HTTP/1.1" 200 6231
+"GET /static/static/image/1.jpg HTTP/1.1" 404 1678
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>], [<URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>], [<URLPattern '^$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>], [<URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>], [<URLPattern '^$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>], [<URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>], [<URLPattern '^$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2286
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>], [<URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>], [<URLPattern '^$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>], [<URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>], [<URLPattern '^$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'Seller.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Seller\\urls.py'> (None:None) 'Seller/'>], [<URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>], [<URLPattern '^$'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'Buyer.urls' from 'E:\\IT Practice\\DiangoFrameWork\\DjangoTest1\\DjangoTest1\\Qshop\\Buyer\\urls.py'> (None:None) 'Buyer/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2286
+"GET /Seller/login/ HTTP/1.1" 200 4076
+(0.000) BEGIN; args=None
+(0.003) INSERT INTO "Seller_valid_code" ("code_content", "code_user", "code_time", "code_state") VALUES ('edbyZQ', '111@qq.com', '2019-10-07 22:14:09.872045', 0); args=['edbyZQ', '111@qq.com', '2019-10-07 22:14:09.872045', 0]
+"POST /Seller/slc/ HTTP/1.1" 200 49
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."email" = '111@qq.com' ORDER BY "Seller_loginuser"."id" ASC  LIMIT 1; args=('111@qq.com',)
+(0.000) SELECT "Seller_valid_code"."id", "Seller_valid_code"."code_content", "Seller_valid_code"."code_user", "Seller_valid_code"."code_time", "Seller_valid_code"."code_state" FROM "Seller_valid_code" WHERE "Seller_valid_code"."code_user" = '111@qq.com' ORDER BY "Seller_valid_code"."code_time" DESC  LIMIT 1; args=('111@qq.com',)
+(0.000) SELECT (1) AS "a" FROM "django_session" WHERE "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'  LIMIT 1; args=('2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn',)
+(0.000) BEGIN; args=None
+(0.002) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") SELECT '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn', 'MjFhMjRkMWVlZDkwN2RiZWFjNGFhMjQ0ZmMyMzkxOWI2MTM1YTIwNTp7ImVtYWlsIjoiMTExQHFxLmNvbSJ9', '2019-10-21 22:15:01.641502'; args=('2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn', 'MjFhMjRkMWVlZDkwN2RiZWFjNGFhMjQ0ZmMyMzkxOWI2MTM1YTIwNTp7ImVtYWlsIjoiMTExQHFxLmNvbSJ9', '2019-10-21 22:15:01.641502')
+"POST /Seller/login/ HTTP/1.1" 302 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:15:01.657503' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:15:01.657503', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 23695
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:15:06.363773' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:15:06.363773', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 23695
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:15:07.963864' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:15:07.963864', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+Exception while resolving variable 'address' in template 'seller/personal_info.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'LoginUser' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'LoginUser' object has no attribute 'address'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'address'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [address] in <LoginUser: LoginUser object (2)>
+"GET /Seller/personal_info/ HTTP/1.1" 200 17669
+"GET /static/images/default_photo.jpg HTTP/1.1" 404 1696
+Exception while resolving variable 'username' in template 'buyer/index.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+KeyError: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'dict' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [username] in {'csrftoken': '2ws9TQ34QSU72rJDfVVtwBcIQ4rtjqeIuD6qCKBff1QeHmadHysvD7AuQPKX2ckh', 'monitor_count': '30', '__guid': '96992031.371719847961085300.1568620609643.3909', 'user_id': '2', 'email': '111@qq.com', 'sessionid': '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'}
+Exception while resolving variable 'result' in template 'buyer/index.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'result'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'result'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'result'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [result] in [{'True': True, 'False': False, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000662C860>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000006617E80>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'DEBUG': 10}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000000006676950>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000000066769D8>>, 'request': <WSGIRequest: GET '/Seller/buyer_index/'>}, {}, {'block': <Block Node: content. Contents: [<TextNode: '\n\t<div class="center_con '>, <ForNode: for ty in result, tail_len: 9>, <TextNode: '\n'>]>}, {}]
+"GET /Seller/buyer_index/ HTTP/1.1" 200 4713
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:16:04.624105' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:16:04.624105', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+Exception while resolving variable 'address' in template 'seller/personal_info.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'LoginUser' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'LoginUser' object has no attribute 'address'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'address'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [address] in <LoginUser: LoginUser object (2)>
+"GET /Seller/personal_info/ HTTP/1.1" 200 17669
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+(0.000) SELECT "Buyer_orderinfo"."id", "Buyer_orderinfo"."order_id_id", "Buyer_orderinfo"."goods_id", "Buyer_orderinfo"."goods_picture", "Buyer_orderinfo"."goods_name", "Buyer_orderinfo"."goods_count", "Buyer_orderinfo"."goods_price", "Buyer_orderinfo"."goods_total_price", "Buyer_orderinfo"."order_status", "Buyer_orderinfo"."store_id_id" FROM "Buyer_orderinfo" WHERE ("Buyer_orderinfo"."store_id_id" = 2 AND "Buyer_orderinfo"."order_status" = 0) ORDER BY "Buyer_orderinfo"."id" DESC; args=(2, 0)
+(0.001) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 38; args=(38,)
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 5; args=(5,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+(0.000) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 7; args=(7,)
+(0.000) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 3; args=(3,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+(0.001) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 6; args=(6,)
+(0.000) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 3; args=(3,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+(0.001) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 5; args=(5,)
+(0.000) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 3; args=(3,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+(0.000) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 4; args=(4,)
+(0.000) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 3; args=(3,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+(0.001) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 3; args=(3,)
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 3; args=(3,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+(0.000) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 2; args=(2,)
+(0.000) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 3; args=(3,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+Exception while resolving variable 'all_good' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [all_good] in [{'True': True, 'False': False, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000000006617F28>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000000000663BCC0>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'DEBUG': 10}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x00000000066CB510>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000000066769D8>>, 'request': <WSGIRequest: GET '/Seller/order_list/0/'>}, {}, {'store_order': <QuerySet [<OrderInfo: OrderInfo object (8)>, <OrderInfo: OrderInfo object (7)>, <OrderInfo: OrderInfo object (6)>, <OrderInfo: OrderInfo object (5)>, <OrderInfo: OrderInfo object (4)>, <OrderInfo: OrderInfo object (3)>, <OrderInfo: OrderInfo object (2)>]>, 'user_id': '2', 'store': <LoginUser: LoginUser object (2)>, 'status': 0, 'request': <WSGIRequest: GET '/Seller/order_list/0/'>}, {'block': <Block Node: content. Contents: [<TextNode: '\n    <table class="table"'>, <ForNode: for order in store_order, tail_len: 17>, <TextNode: '\n        </tbody>\n    <tf'>, <ForNode: for p in all_good.page_range, tail_len: 3>, <TextNode: '\n    </ul>\n'>]>}, {}]
+"GET /Seller/order_list/0/ HTTP/1.1" 200 20506
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+(0.001) SELECT "Buyer_orderinfo"."id", "Buyer_orderinfo"."order_id_id", "Buyer_orderinfo"."goods_id", "Buyer_orderinfo"."goods_picture", "Buyer_orderinfo"."goods_name", "Buyer_orderinfo"."goods_count", "Buyer_orderinfo"."goods_price", "Buyer_orderinfo"."goods_total_price", "Buyer_orderinfo"."order_status", "Buyer_orderinfo"."store_id_id" FROM "Buyer_orderinfo" WHERE ("Buyer_orderinfo"."store_id_id" = 2 AND "Buyer_orderinfo"."order_status" = 1) ORDER BY "Buyer_orderinfo"."id" DESC; args=(2, 1)
+Exception while resolving variable 'all_good' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [all_good] in [{'True': True, 'False': False, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000665FEB8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000004DCDA20>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'DEBUG': 10}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x00000000066CB2F0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000000066CB268>>, 'request': <WSGIRequest: GET '/Seller/order_list/1/'>}, {}, {'store_order': <QuerySet []>, 'user_id': '2', 'store': <LoginUser: LoginUser object (2)>, 'status': 1, 'request': <WSGIRequest: GET '/Seller/order_list/1/'>}, {'block': <Block Node: content. Contents: [<TextNode: '\n    <table class="table"'>, <ForNode: for order in store_order, tail_len: 17>, <TextNode: '\n        </tbody>\n    <tf'>, <ForNode: for p in all_good.page_range, tail_len: 3>, <TextNode: '\n    </ul>\n'>]>}, {}]
+"GET /Seller/order_list/1/ HTTP/1.1" 200 16942
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+(0.000) SELECT "Buyer_orderinfo"."id", "Buyer_orderinfo"."order_id_id", "Buyer_orderinfo"."goods_id", "Buyer_orderinfo"."goods_picture", "Buyer_orderinfo"."goods_name", "Buyer_orderinfo"."goods_count", "Buyer_orderinfo"."goods_price", "Buyer_orderinfo"."goods_total_price", "Buyer_orderinfo"."order_status", "Buyer_orderinfo"."store_id_id" FROM "Buyer_orderinfo" WHERE ("Buyer_orderinfo"."store_id_id" = 2 AND "Buyer_orderinfo"."order_status" = 2) ORDER BY "Buyer_orderinfo"."id" DESC; args=(2, 2)
+(0.001) SELECT "Buyer_payorder"."id", "Buyer_payorder"."order_number", "Buyer_payorder"."order_data", "Buyer_payorder"."order_total", "Buyer_payorder"."order_user_id" FROM "Buyer_payorder" WHERE "Buyer_payorder"."id" = 1; args=(1,)
+(0.000) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 3; args=(3,)
+Exception while resolving variable 'order_user' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'Payorder' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 163, in __get__
+    rel_obj = self.field.get_cached_value(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\mixins.py", line 13, in get_cached_value
+    return instance._state.fields_cache[cache_name]
+KeyError: 'order_user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 177, in __get__
+    rel_obj = self.get_object(instance)
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\fields\related_descriptors.py", line 144, in get_object
+    return qs.get(self.field.get_reverse_related_filter(instance))
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\db\models\query.py", line 399, in get
+    self.model._meta.object_name
+Seller.models.LoginUser.DoesNotExist: LoginUser matching query does not exist.
+Exception while resolving variable 'all_good' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [all_good] in [{'True': True, 'False': False, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000066C3390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000066D34A8>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'DEBUG': 10}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x00000000066CB268>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000000066769D8>>, 'request': <WSGIRequest: GET '/Seller/order_list/2/'>}, {}, {'store_order': <QuerySet [<OrderInfo: OrderInfo object (1)>]>, 'user_id': '2', 'store': <LoginUser: LoginUser object (2)>, 'status': 2, 'request': <WSGIRequest: GET '/Seller/order_list/2/'>}, {'block': <Block Node: content. Contents: [<TextNode: '\n    <table class="table"'>, <ForNode: for order in store_order, tail_len: 17>, <TextNode: '\n        </tbody>\n    <tf'>, <ForNode: for p in all_good.page_range, tail_len: 3>, <TextNode: '\n    </ul>\n'>]>}, {}]
+"GET /Seller/order_list/2/ HTTP/1.1" 200 17457
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+(0.000) SELECT "Buyer_orderinfo"."id", "Buyer_orderinfo"."order_id_id", "Buyer_orderinfo"."goods_id", "Buyer_orderinfo"."goods_picture", "Buyer_orderinfo"."goods_name", "Buyer_orderinfo"."goods_count", "Buyer_orderinfo"."goods_price", "Buyer_orderinfo"."goods_total_price", "Buyer_orderinfo"."order_status", "Buyer_orderinfo"."store_id_id" FROM "Buyer_orderinfo" WHERE ("Buyer_orderinfo"."store_id_id" = 2 AND "Buyer_orderinfo"."order_status" = 34) ORDER BY "Buyer_orderinfo"."id" DESC; args=(2, 34)
+Exception while resolving variable 'all_good' in template 'seller/order_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [all_good] in [{'True': True, 'False': False, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000066D3208>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000000006629CC0>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'DEBUG': 10}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000000000671EEA0>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x000000000671EF28>>, 'request': <WSGIRequest: GET '/Seller/order_list/34/'>}, {}, {'store_order': <QuerySet []>, 'user_id': '2', 'store': <LoginUser: LoginUser object (2)>, 'status': 34, 'request': <WSGIRequest: GET '/Seller/order_list/34/'>}, {'block': <Block Node: content. Contents: [<TextNode: '\n    <table class="table"'>, <ForNode: for order in store_order, tail_len: 17>, <TextNode: '\n        </tbody>\n    <tf'>, <ForNode: for p in all_good.page_range, tail_len: 3>, <TextNode: '\n    </ul>\n'>]>}, {}]
+"GET /Seller/order_list/34/ HTTP/1.1" 200 16942
+"GET /Seller/goods_list/1/1 HTTP/1.1" 301 0
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:16:26.201339' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:16:26.201339', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+(0.000) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+(0.001) SELECT COUNT(*) AS "__count" FROM "Seller_goods" WHERE ("Seller_goods"."goods_status" = 1 AND "Seller_goods"."goods_store_id" = 2); args=(1, 2)
+(0.001) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE ("Seller_goods"."goods_status" = 1 AND "Seller_goods"."goods_store_id" = 2)  LIMIT 21; args=(1, 2)
+Exception while resolving variable 'all_good' in template 'seller/goods_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [all_good] in [{'True': True, 'False': False, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000000000662C9E8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000066BD240>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'DEBUG': 10}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x00000000066CB268>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x00000000067311E0>>, 'request': <WSGIRequest: GET '/Seller/goods_list/1/1/'>}, {}, {'goodses': <QuerySet []>, 'user': <LoginUser: LoginUser object (2)>, 'goods_list': <Page 1 of 1>, 'page': 1, 'request': <WSGIRequest: GET '/Seller/goods_list/1/1/'>, 'all_goods': <django.core.paginator.Paginator object at 0x00000000066BDDD8>, 'user_id': '2', 'status': '1'}, {'block': <Block Node: content. Contents: [<TextNode: '\n    <table class="table"'>, <ForNode: for goods in goods_list, tail_len: 15>, <TextNode: '\n        </tbody>\n    <tf'>, <ForNode: for p in all_good.page_range, tail_len: 3>, <TextNode: '\n    </ul>\n'>]>}, {}]
+"GET /Seller/goods_list/1/1/ HTTP/1.1" 200 17050
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:16:28.709482' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:16:28.709482', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+(0.000) SELECT "Seller_goodstype"."id", "Seller_goodstype"."type_label", "Seller_goodstype"."type_description", "Seller_goodstype"."picture" FROM "Seller_goodstype"; args=()
+"GET /Seller/goods_add/ HTTP/1.1" 200 18770
+"GET /Seller/goods_list/1/0 HTTP/1.1" 301 0
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:16:31.425638' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:16:31.425638', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+(0.001) SELECT "Seller_loginuser"."id", "Seller_loginuser"."email", "Seller_loginuser"."password", "Seller_loginuser"."username", "Seller_loginuser"."phone_number", "Seller_loginuser"."photo", "Seller_loginuser"."age", "Seller_loginuser"."gender", "Seller_loginuser"."adress", "Seller_loginuser"."user_type" FROM "Seller_loginuser" WHERE "Seller_loginuser"."id" = 2; args=(2,)
+(0.000) SELECT COUNT(*) AS "__count" FROM "Seller_goods" WHERE ("Seller_goods"."goods_status" = 0 AND "Seller_goods"."goods_store_id" = 2); args=(0, 2)
+(0.000) SELECT "Seller_goods"."id", "Seller_goods"."goods_number", "Seller_goods"."goods_name", "Seller_goods"."goods_price", "Seller_goods"."goods_count", "Seller_goods"."goods_location", "Seller_goods"."goods_safe_date", "Seller_goods"."goods_pro_time", "Seller_goods"."goods_status", "Seller_goods"."goods_description", "Seller_goods"."picture", "Seller_goods"."goods_type_id", "Seller_goods"."goods_store_id" FROM "Seller_goods" WHERE ("Seller_goods"."goods_status" = 0 AND "Seller_goods"."goods_store_id" = 2)  LIMIT 21; args=(0, 2)
+Exception while resolving variable 'all_good' in template 'seller/goods_list.html'.
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'all_good'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python+AI\Anaconda3-2019.03\envs\DjangoPath\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [all_good] in [{'True': True, 'False': False, 'None': None}, {'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x00000000066D39E8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x00000000066D5278>, 'DEFAULT_MESSAGE_LEVELS': {'ERROR': 40, 'SUCCESS': 25, 'WARNING': 30, 'INFO': 20, 'DEBUG': 10}, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000000006731510>>, 'csrf_token': <SimpleLazyObject: <function csrf.<locals>._get_val at 0x0000000006731620>>, 'request': <WSGIRequest: GET '/Seller/goods_list/1/0/'>}, {}, {'goodses': <QuerySet []>, 'user': <LoginUser: LoginUser object (2)>, 'goods_list': <Page 1 of 1>, 'page': 1, 'request': <WSGIRequest: GET '/Seller/goods_list/1/0/'>, 'all_goods': <django.core.paginator.Paginator object at 0x00000000066D5160>, 'user_id': '2', 'status': '0'}, {'block': <Block Node: content. Contents: [<TextNode: '\n    <table class="table"'>, <ForNode: for goods in goods_list, tail_len: 15>, <TextNode: '\n        </tbody>\n    <tf'>, <ForNode: for p in all_good.page_range, tail_len: 3>, <TextNode: '\n    </ul>\n'>]>}, {}]
+"GET /Seller/goods_list/1/0/ HTTP/1.1" 200 17050
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:16:33.062731' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:16:33.062731', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+(0.001) SELECT "Seller_goodstype"."id", "Seller_goodstype"."type_label", "Seller_goodstype"."type_description", "Seller_goodstype"."picture" FROM "Seller_goodstype"; args=()
+"GET /Seller/goods_add/ HTTP/1.1" 200 18770
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:20:59.675981' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:20:59.675981', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 23695
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:25:43.842234' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:25:43.842234', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 24367
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:35:07.380467' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:35:07.380467', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 25837
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:46:19.854930' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:46:19.854930', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 29723
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 22:47:13.062973' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 22:47:13.062973', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 29723
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 23:02:51.851669' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 23:02:51.851669', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 30321
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 23:02:56.498935' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 23:02:56.498935', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 30321
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2019-10-07 23:04:39.910850' AND "django_session"."session_key" = '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn'); args=('2019-10-07 23:04:39.910850', '2pa9k0ssj0pg9f46jzfe8kbtqhnyvjzn')
+"GET /Seller/index/ HTTP/1.1" 200 30321
